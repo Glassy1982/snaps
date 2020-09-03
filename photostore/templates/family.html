@@ -1,0 +1,46 @@
+{% extends "home.html" %}
+
+{% block head %}
+<title>Family</title>
+{% endblock %}
+
+{% block content %}
+<body class="bodyStyle">
+    <div class="gallery">
+        <figure class="gallery_item gallery_item--1">
+            <form method="POST" enctype="multipart/form-data" action="/templates/family.html">
+                <input type="file" name="photo">
+                <input type="submit">
+            </form>
+            <img src="{{ url_for('static', filename=image_name) }}">
+        </figure>
+         <figure class="gallery_item gallery_item--2">
+
+        </figure>
+         <figure class="gallery_item gallery_item--3">
+
+        </figure>
+         <figure class="gallery_item gallery_item--4">
+
+        </figure>
+         <figure class="gallery_item gallery_item--5">
+
+        </figure>
+         <figure class="gallery_item gallery_item--6">
+
+        </figure>
+         <figure class="gallery_item gallery_item--7">
+
+        </figure>
+         <figure class="gallery_item gallery_item--8">
+
+        </figure>
+         <figure class="gallery_item gallery_item--9">
+
+        </figure>
+         <figure class="gallery_item gallery_item--10">
+
+        </figure>
+    </div>
+</body>
+{% endblock %}

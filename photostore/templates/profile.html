@@ -1,0 +1,23 @@
+{% extends "home.html" %}
+
+{% block head %}
+    <title>Profile</title>
+{% endblock %}
+
+{% block content %}
+<body>
+    <div id="backdrop">
+        <div>
+            <img class="profilePic" src="{{ url_for('static', filename='images/Hat and Guitar.jpeg')}}" alt="profile pic">
+        </div>
+        <div>
+            <h2>A bit about myself...</h2>
+            <p>I am an amateur photographer from the north east of england who takes
+             photos just for the sheer fun of it.
+            <br><br>
+            I am available to snap some shots of you wherever you would like me
+            to, and I can shoot in a variety of styles.</p>
+        </div>
+    </div>
+</body>
+{% endblock %}
